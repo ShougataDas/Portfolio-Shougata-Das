@@ -84,7 +84,7 @@ I enjoy solving problems, building intelligent systems, and exploring intersecti
 If you’re curious about my work, check out my projects here or connect with me:
 
 * 💼 [LinkedIn](https://www.linkedin.com/in/shougata-das/)
-* 📧 Email: [your-email@example.com](mailto:your-email@example.com)
+* 📧 Email: [shougatad@gmail.com](mailto:shougatad@gmail.com)
 
 ---
 

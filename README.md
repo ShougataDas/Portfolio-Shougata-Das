@@ -30,7 +30,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://portfolio-shougata-das-1xqf.vercel.app/](https://portfolio-shougata-das-1xqf.vercel.app/) with your browser to see the result.
 
 ## Build your app
 

@@ -1,61 +1,93 @@
-# Portfolio of Shougata Das
+# Portfolio – Shougata Das
 
-*Developed locally and deployed to production*
+My personal portfolio website built with **Next.js**, **TypeScript**, and deployed on **Vercel**.
+It showcases who I am, my projects, and my journey as an aspiring **AI/ML engineer**.
 
-[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+🌐 Live Site: [portfolio-shougata-das.vercel.app](https://portfolio-shougata-das-1xqf.vercel.app/)
 
-## Overview
+---
 
-This is a Next.js TypeScript project developed locally and maintained through version control.
-All changes are made locally and pushed to the repository for deployment.
+## 🚀 Features
 
-## Development
+* **Modern stack** – Next.js 14, TypeScript, TailwindCSS
+* **Responsive design** – Optimized for desktop and mobile
+* **Dynamic sections**
 
-To run the project locally:
+  * About Me
+  * Projects
+  * Skills & Tools
+  * Contact
+* **Deployed on Vercel** – Easy CI/CD integration
+* **Fast & lightweight** – Clean UI and smooth experience
+
+---
+
+## 📂 Project Structure
+
+```
+├── app/            # Next.js app routes and pages
+├── components/     # Reusable UI components
+├── lib/            # Utility functions
+├── public/         # Static assets (images, icons, etc.)
+├── styles/         # Global styles
+├── package.json    # Dependencies and scripts
+```
+
+---
+
+## ⚡ Getting Started
+
+Clone the repo and run it locally:
 
 ```bash
-# Install dependencies
-npm install
-# or
-yarn install
-# or
-pnpm install
+git clone https://github.com/ShougataDas/Portfolio-Shougata-Das.git
+cd Portfolio-Shougata-Das
 
-# Run the development server
+# install dependencies
+npm install   # or yarn install or pnpm install
+
+# run in development
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+# build for production
+npm run build
+npm start
 ```
 
-Open [https://portfolio-shougata-das-1xqf.vercel.app/](https://portfolio-shougata-das-1xqf.vercel.app/) with your browser to see the result.
+The app will be running on `http://localhost:3000/`.
 
-## Build your app
+---
 
-Continue developing your app locally:
+## 🛠️ Tech Stack
 
-1. Make changes to your project files
-2. Test locally using the development server
-3. Commit and push changes to your repository
-4. Deploy updates to your hosting platform
+* [Next.js](https://nextjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Vercel](https://vercel.com/)
 
-## How It Works
+---
 
-1. Develop and modify your project locally
-2. Test changes using the local development server
-3. Commit changes to version control
-4. Push updates to your repository
-5. Deploy to your preferred hosting platform
+## 📌 Roadmap
 
-## Project Structure
+* Add **dark mode** toggle
+* Blog section for technical writings
+* More detailed project case studies
+* Smooth animations and transitions
 
-```
-├── app/                 # Next.js app directory
-├── components/          # React components
-├── lib/                # Utility functions
-├── public/             # Static assets
-├── styles/             # Styling files
-└── package.json        # Project dependencies
-```
+---
+
+## 👤 About Me
+
+Hi, I’m **Shougata Das**, a student and aspiring **AI/ML engineer**.
+I enjoy solving problems, building intelligent systems, and exploring intersections of **machine learning, deep learning, and data science**.
+
+If you’re curious about my work, check out my projects here or connect with me:
+
+* 💼 [LinkedIn](https://www.linkedin.com/in/shougata-das/)
+* 📧 Email: [your-email@example.com](mailto:your-email@example.com)
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).

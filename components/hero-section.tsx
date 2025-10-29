@@ -80,7 +80,7 @@ export function HeroSection() {
             className="hover:scale-110 transition-all duration-300 animate-glow hover:shadow-2xl"
           >
             <a
-              href="https://drive.google.com/file/d/1Id7V-vRDdB5wiR3RzaRKypr-fU22ovqh/view?usp=sharing"
+              href="https://drive.google.com/file/d/1uWfW03gqQL49hSps0T4fKNxDh6KzX8NW/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

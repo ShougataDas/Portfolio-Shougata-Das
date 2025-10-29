@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Github } from "lucide-react"
+import { Github, ExternalLink } from "lucide-react"
 
 export function ProjectsSection() {
   const projects = [
@@ -13,12 +13,13 @@ export function ProjectsSection() {
       image: "/Chess_project.png",
     },
     {
-      title: "Drawing Canvas using OpenGL in C++",
+      title: "Project Sharko: AI-Powered Shark Hotspot Prediction",
       description:
-        "Interactive drawing app with OpenGL + GLUT. Supports object-based rendering, color presets, and scene creation.",
-      technologies: ["C++", "OpenGL", "GLUT", "Computer Graphics"],
-      github: "https://github.com/ShougataDas/Drawing-Canvas",
-      image: "/Drawing_Canvas.png",
+        "Developed an AI-driven system that predicts shark foraging hotspots by fusing NASA satellite data with global shark occurrence records. Built multi-tiered models for forecasting ocean conditions and validated results through the Metabolic Kill Tag hardware concept.",
+      technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas", "GeoPandas", "Vercel"],
+      github: "https://github.com/midul9797/sharko",
+      image: "/Sharko_project.png",
+      live: "https://sharko-omega.vercel.app/",
     },
   ]
 
@@ -68,6 +69,14 @@ export function ProjectsSection() {
                       View Code
                     </a>
                   </Button>
+                  {project.live && (
+                    <Button size="sm" variant="secondary" asChild className="hover:scale-105 transition-transform">
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        View Live
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

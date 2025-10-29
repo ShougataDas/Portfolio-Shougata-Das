@@ -1,61 +1,80 @@
-# Portfolio of Shougata Das
+# 🌐 Portfolio — Shougata Das
 
-*Developed locally and deployed to production*
+A personal portfolio built to showcase my projects, achievements, and professional background.
+Deployed with **Vercel**, powered by **React** and **modern web technologies**.
 
-[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+---
 
-## Overview
+## 🚀 Live Demo
 
-This is a Next.js TypeScript project developed locally and maintained through version control.
-All changes are made locally and pushed to the repository for deployment.
+🔗 [View Portfolio](https://portfolio-shougata-das-1xqf.vercel.app/)
 
-## Development
+---
 
-To run the project locally:
+## 🧩 Features
+
+* Dynamic project showcase with live links and GitHub integration
+* Responsive design optimized for all devices
+* Sections for education, experience, and achievements
+* Clean, minimal UI with fast loading
+* Hosted and auto-deployed via **Vercel** + **GitHub**
+
+---
+
+## 🔧 Tech Stack
+
+* **Frontend:** React, JavaScript, HTML, CSS
+* **Styling:** Tailwind CSS
+* **Deployment:** Vercel
+* **Version Control:** Git & GitHub
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── public/           # Static assets (images, icons)
+├── src/              # React components & logic
+│   ├── components/   # UI components
+│   ├── pages/        # Individual page sections
+│   └── data/         # Project and experience data
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Setup & Run Locally
 
 ```bash
+# Clone this repo
+git clone https://github.com/ShougataDas/Portfolio-Shougata-Das.git
+
+# Navigate into the folder
+cd Portfolio-Shougata-Das
+
 # Install dependencies
 npm install
-# or
-yarn install
-# or
-pnpm install
 
-# Run the development server
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site will run locally at `http://localhost:3000/`.
 
-## Build your app
+---
 
-Continue developing your app locally:
+## 📢 Connect with Me
 
-1. Make changes to your project files
-2. Test locally using the development server
-3. Commit and push changes to your repository
-4. Deploy updates to your hosting platform
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/shougata-das-b858221b0/)
+[![Codeforces](https://img.shields.io/badge/Codeforces-orange?style=flat\&logo=codeforces\&logoColor=white)](https://codeforces.com/profile/siuuu_on_code)
+[![CodeChef](https://img.shields.io/badge/CodeChef-brown?style=flat\&logo=codechef\&logoColor=white)](https://www.codechef.com/users/sogu7)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0A66C2?style=flat\&logo=google-chrome\&logoColor=white)](https://portfolio-shougata-das-1xqf.vercel.app/)
 
-## How It Works
+---
 
-1. Develop and modify your project locally
-2. Test changes using the local development server
-3. Commit changes to version control
-4. Push updates to your repository
-5. Deploy to your preferred hosting platform
+## 🧠 Author
 
-## Project Structure
-
-```
-├── app/                 # Next.js app directory
-├── components/          # React components
-├── lib/                # Utility functions
-├── public/             # Static assets
-├── styles/             # Styling files
-└── package.json        # Project dependencies
-```
+**Shougata Das** — Aspiring AI/ML Engineer & Competitive Programmer
+📍 Based in Chattogram, Bangladesh

@@ -1,46 +1,68 @@
 import type React from "react"
-import type { Metadata } from "next"
-import { GeistMono } from "geist/font/mono"
-import { Playfair_Display, Source_Sans_3 } from "next/font/google"
+import type { Metadata, Viewport } from "next"
+import { JetBrains_Mono, IBM_Plex_Sans } from "next/font/google"
+import { ThemeProvider } from "@/components/theme-provider"
+import { profile } from "@/lib/data"
 import "./globals.css"
 
-const playfair = Playfair_Display({
+const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-playfair",
+  variable: "--font-jetbrains",
 })
 
-const sourceSans = Source_Sans_3({
+const plex = IBM_Plex_Sans({
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
   display: "swap",
-  variable: "--font-source-sans",
+  variable: "--font-plex",
 })
+
+const description = `${profile.name}: ${profile.role} and competitive programmer in ${profile.location}. ${profile.tagline}`
 
 export const metadata: Metadata = {
-  title: "Shougata Das - Portfolio",
-  description: "Computer Science Graduate | Aspiring Data Scientist | Competitive Programmer",
-  generator: "v0.app",
+  metadataBase: new URL(profile.siteUrl),
+  title: `${profile.name} · ${profile.role}`,
+  description,
+  authors: [{ name: profile.name, url: profile.siteUrl }],
+  keywords: [
+    "Shougata Das",
+    "AI engineer",
+    "machine learning",
+    "Charles Darwin University",
+    "competitive programming",
+    "Darwin",
+    "portfolio",
+  ],
+  openGraph: {
+    type: "website",
+    url: profile.siteUrl,
+    title: `${profile.name} · ${profile.role}`,
+    description,
+    siteName: profile.name,
+  },
+  twitter: {
+    card: "summary",
+    title: `${profile.name} · ${profile.role}`,
+    description,
+  },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  return (
-    <html lang="en">
-      <head>
-        <style>{`
-html {
-  font-family: ${sourceSans.style.fontFamily};
-  --font-sans: ${sourceSans.variable};
-  --font-mono: ${GeistMono.variable};
-  --font-playfair: ${playfair.variable};
-  --font-source-sans: ${sourceSans.variable};
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f6f7f9" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0e13" },
+  ],
 }
-        `}</style>
-      </head>
-      <body className={`${sourceSans.variable} ${playfair.variable} antialiased`}>{children}</body>
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en" suppressHydrationWarning className={`${jetbrains.variable} ${plex.variable}`}>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

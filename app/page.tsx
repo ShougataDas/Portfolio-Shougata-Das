@@ -1,32 +1,34 @@
-import { Navigation } from "@/components/navigation"
-import { HeroSection } from "@/components/hero-section"
-import { AboutSection } from "@/components/about-section"
-import { EducationSection } from "@/components/education-section"
-import { ProjectsSection } from "@/components/projects-section"
-import { ExperienceSection } from "@/components/experience-section"
-import { ContactSection } from "@/components/contact-section"
-import { CompetitiveProgrammingSection } from "@/components/competitive-programming-section"
+import { Header } from "@/components/header"
+import { Hero } from "@/components/hero"
+import { Shell } from "@/components/shell"
+import { About, CompetitiveProgramming, Education, Experience, Projects, Skills } from "@/components/sections"
+import { Contact, Footer } from "@/components/contact"
+
+// Re-render once a day so the live Codeforces rating stays fresh.
+export const revalidate = 86400
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <EducationSection />
-      <CompetitiveProgrammingSection />
-      <ContactSection />
-
-      {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-8 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-lg font-medium mb-2">Shougata Das</p>
-          <p className="text-primary-foreground/80">Built with Next.js, Tailwind CSS, and lots of ☕</p>
-          <p className="text-sm text-primary-foreground/60 mt-4">© 2025 Shougata Das. All rights reserved.</p>
-        </div>
-      </footer>
-    </main>
+    <>
+      <a
+        href="#about"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded focus:bg-green focus:px-3 focus:py-2 focus:text-primary-foreground"
+      >
+        Skip to content
+      </a>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+        <CompetitiveProgramming />
+        <Contact />
+      </main>
+      <Footer />
+      <Shell />
+    </>
   )
 }

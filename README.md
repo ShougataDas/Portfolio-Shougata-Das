@@ -1,80 +1,59 @@
-# 🌐 Portfolio — Shougata Das
+# Portfolio — Shougata Das
 
-A personal portfolio built to showcase my projects, achievements, and professional background.
-Deployed with **Vercel**, powered by **React** and **modern web technologies**.
+My personal portfolio: a terminal-themed site showing my projects, experience and competitive programming.
 
----
+**Live:** https://portfolio-shougata-das-1xqf.vercel.app/
 
-## 🚀 Live Demo
+## Features
 
-🔗 [View Portfolio](https://portfolio-shougata-das-1xqf.vercel.app/)
+- Terminal look with a typed `whoami` / `neofetch` intro (pure CSS, so all content is in the HTML)
+- Interactive shell: press `/` or `Ctrl+K` and type `help` (tab completion, history, `cd <section>`)
+- Dark and light themes that follow the system setting, plus a toggle
+- Responsive from phone to desktop; respects reduced-motion settings
+- Live Codeforces rating, refreshed daily from the Codeforces API
+- Contact form that emails me through Resend
 
----
+## Tech stack
 
-## 🧩 Features
+Next.js 15 (App Router) · React · TypeScript · Tailwind CSS v4 · next-themes · Resend · Vercel
 
-* Dynamic project showcase with live links and GitHub integration
-* Responsive design optimized for all devices
-* Sections for education, experience, and achievements
-* Clean, minimal UI with fast loading
-* Hosted and auto-deployed via **Vercel** + **GitHub**
+## Editing content
 
----
+All content lives in [`lib/data.ts`](lib/data.ts): profile links, bio, skills, projects, experience,
+education and competitive programming. The components in `components/` only handle layout.
 
-## 🔧 Tech Stack
+To show the CV button, put the link in `profile.cvUrl`.
 
-* **Frontend:** React, JavaScript, HTML, CSS
-* **Styling:** Tailwind CSS
-* **Deployment:** Vercel
-* **Version Control:** Git & GitHub
-
----
-
-## 📁 Project Structure
+## Project structure
 
 ```
-.
-├── public/           # Static assets (images, icons)
-├── src/              # React components & logic
-│   ├── components/   # UI components
-│   ├── pages/        # Individual page sections
-│   └── data/         # Project and experience data
-├── package.json
-└── README.md
+app/
+  layout.tsx          fonts, metadata, theme provider
+  page.tsx            page composition
+  globals.css         terminal colour tokens and animations
+  api/contact/        contact form endpoint (Resend)
+components/
+  term.tsx            Prompt, Window and Section primitives
+  header.tsx          sticky header with the live path and theme toggle
+  hero.tsx            typed intro
+  sections.tsx        about, skills, projects, experience, education, CP
+  contact.tsx         contact form and footer
+  shell.tsx           interactive shell overlay
+lib/data.ts           all site content
 ```
 
----
-
-## ⚙️ Setup & Run Locally
+## Run locally
 
 ```bash
-# Clone this repo
-git clone https://github.com/ShougataDas/Portfolio-Shougata-Das.git
-
-# Navigate into the folder
-cd Portfolio-Shougata-Das
-
-# Install dependencies
 npm install
-
-# Start the development server
 npm run dev
 ```
 
-The site will run locally at `http://localhost:3000/`.
+The contact form needs `RESEND_API_KEY` in `.env.local` (and in the Vercel project settings).
 
----
+## Connect
 
-## 📢 Connect with Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/shougata-das-b858221b0/)
-[![Codeforces](https://img.shields.io/badge/Codeforces-orange?style=flat\&logo=codeforces\&logoColor=white)](https://codeforces.com/profile/siuuu_on_code)
-[![CodeChef](https://img.shields.io/badge/CodeChef-brown?style=flat\&logo=codechef\&logoColor=white)](https://www.codechef.com/users/sogu7)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0A66C2?style=flat\&logo=google-chrome\&logoColor=white)](https://portfolio-shougata-das-1xqf.vercel.app/)
-
----
-
-## 🧠 Author
-
-**Shougata Das** — Aspiring AI/ML Engineer & Competitive Programmer
-📍 Based in Chattogram, Bangladesh
+[LinkedIn](https://www.linkedin.com/in/shougata-das-b858221b0/) ·
+[GitHub](https://github.com/ShougataDas) ·
+[Codeforces](https://codeforces.com/profile/siuuu_on_code) ·
+[CodeChef](https://www.codechef.com/users/sogu7)

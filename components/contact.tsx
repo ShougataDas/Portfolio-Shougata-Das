@@ -56,6 +56,7 @@ export function Contact() {
               ["email", <TermLink key="e" href={`mailto:${profile.email}`}>{profile.email}</TermLink>],
               ["github", <TermLink key="g" href={profile.github}>ShougataDas</TermLink>],
               ["linkedin", <TermLink key="l" href={profile.linkedin}>shougata-das</TermLink>],
+              ...(profile.cvUrl ? [["cv", <TermLink key="cv" href={profile.cvUrl}>view CV</TermLink>]] : []),
               ["location", <span key="loc">{profile.location}</span>],
             ].map(([k, v]) => (
               <div key={k as string} className="grid grid-cols-[5.5rem_1fr] gap-2">

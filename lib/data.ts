@@ -12,7 +12,7 @@ export const profile = {
   github: "https://github.com/ShougataDas",
   linkedin: "https://www.linkedin.com/in/shougata-das-b858221b0/",
   // Paste the link to your new CV here. The CV buttons stay hidden while this is empty.
-  cvUrl: "",
+  cvUrl: "https://drive.google.com/file/d/16Q7oLsUUTemR_bgkPwLWvx1vwiPsQ1Mo/view?usp=sharing",
   siteUrl: "https://portfolio-shougata-das-1xqf.vercel.app",
   openTo: "Internships, graduate roles and research work in ML / AI engineering",
 }
@@ -161,14 +161,14 @@ export const education = [
     degree: "Master of Information Technology (Artificial Intelligence)",
     school: "Charles Darwin University",
     location: "Darwin, Australia",
-    status: "In progress",
+    status: "Jul 2026 – present",
     note: "",
   },
   {
     degree: "BSc in Computer Science and Engineering",
     school: "East Delta University",
     location: "Chattogram, Bangladesh",
-    status: "Completed",
+    status: "Graduated Jan 2026",
     note: "CGPA 3.74 / 4.00 · Outstanding Student Achievement Award",
   },
   {
